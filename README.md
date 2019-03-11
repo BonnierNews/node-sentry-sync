@@ -1,5 +1,7 @@
 # Sentry Sync
 
+**Work in progress, CLI-tool doesn't work yet**
+
 Syncs `releases` as well as source maps and related source files to Sentry.
 
 [![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat)](https://github.com/Flet/semistandard)
