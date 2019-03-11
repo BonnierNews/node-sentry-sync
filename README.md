@@ -7,7 +7,7 @@ Syncs `releases` as well as source maps and related source files to Sentry.
 ## Install
 
 ```bash
-npm install -g @hdsydsvenskan/sentry-sync
+npm install -g @bonniernews/sentry-sync
 ```
 
 ## Syntax
@@ -16,28 +16,16 @@ npm install -g @hdsydsvenskan/sentry-sync
 sentry-sync \
 --organization foo \
 --project bar \
---sourceMapFile relative/path/to/source-map/file \
---version <something-indicating-the-version> \
---token secret123
+--source-version <something-indicating-the-version> \
+--token secret123 \
+relative/path/to/source-map/file1
+relative/path/to/source-map/file2
 ```
-
-<!-- Or:
-
-```bash
-sentry-sync config.yml
-```
-
-Or:
-
-```bash
-cat config.yml | sentry-sync
-``` -->
 
 ## Flags
 
 * `--organization` - _required_ - specify the name of the Sentry organization of the project to sync with
 * `--project` - _required_ - specify the name Sentry project to sync with
-* `--source-map-file` - _required_ - specify a relative path to the source map file to sync
 * `--source-version` - _required_ - specify the version of the source that is synced (eg. a short hash, a SemVer version or such)
 * `--commit` - specify the commit hash of the pushed code
 * `--help` - if specified then this help will be printed
