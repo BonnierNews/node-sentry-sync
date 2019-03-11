@@ -1,6 +1,6 @@
 {
   "name": "@bonniernews/sentry-sync",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "description": "Syncs release data from a project to Sentry",
   "author": "Pelle Wessman <pelle.wessman@hdsydsvenskan.se>",
